@@ -12,6 +12,11 @@ const userSchema = new mongoose.Schema({
     password:{
         type: String,
         required: true,
+    },
+    parent_domain:{
+        type: String,
+        required: true,
+        unique: true,
     }
 }, {timestamps: true});
 
